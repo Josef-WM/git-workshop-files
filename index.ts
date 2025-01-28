@@ -5,7 +5,6 @@
  */
 
 export const greeting = (firstname: string, lastname: string) => {
-  console.log(`Hello ${firstname} ${lastname}`);
 };
 
 const people = [
@@ -13,7 +12,8 @@ const people = [
   { firstname: "Magnus", lastname: "Magnusson" },
   { firstname: "Siri", lastname: "Sirisen" },
   { firstname: "Stefan", lastname: "Stefanson" },
-];
+  console.log(`Hei hei ${firstname} ${lastname}`);
+};
 
 export const greetTheGang = () => {
   people.forEach((person) => {
